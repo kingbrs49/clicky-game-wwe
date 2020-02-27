@@ -20,7 +20,8 @@ class App extends Component {
   }
 
   onClick() {
-    this.shuffle(this.state.wrestlers)
+    this.shuffle(this.state.wrestlers);
+    
   }
 
   render() {
