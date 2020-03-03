@@ -4,19 +4,19 @@ const Header = (props)=> (
     <nav style={{background: "Black", color: "red", }} className={"navbar navbar-default sticky-top"}>
         <div className={"container"}>
             <div>
-                <p className="lead">
+                <h4 className="lead">
                     <b>WWE Clicky Game</b>
-                </p>
+                </h4>
             </div>
             <div>
-                <p className="lead">
+                <h4 className="lead">
                     Score: <b>{props.score}</b>
-                </p>
+                </h4>
             </div>
             <div>
-                <p className="lead">
+                <h4 className="lead">
                     Top Score: <b>{props.topScore}</b>
-                </p>
+                </h4>
             </div>
         </div>
     </nav>

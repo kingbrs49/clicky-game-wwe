@@ -25,12 +25,7 @@ class App extends Component {
   }
 
   render() {
-
-    console.log(this.state.wrestlers)
-
-    //this.shuffle(this.state.wrestlers)
-    
-    //console.log(this.state.wrestlers)
+    console.log(this.state.wrestlers);
 
     return (
       <div>
