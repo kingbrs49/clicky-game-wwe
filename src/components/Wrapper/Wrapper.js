@@ -3,7 +3,7 @@ import "./style.css";
 
 function Wrapper(props) {
     return (
-    <div className="row d-flex justify-content-center">
+    <div className="row">
         {props.children}
     </div>
     )

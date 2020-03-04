@@ -9,6 +9,7 @@ class App extends Component {
 
   state = {
     wrestlers,
+    message: "Click a WWE Superstar to begin!",
     score: 0,
     topScore: 0
   };
@@ -21,7 +22,9 @@ class App extends Component {
 
   onClick() {
     this.shuffle(this.state.wrestlers);
-    
+    this.setState((state) => {
+      return {score: state.score + 1};
+    });
   }
 
   render() {
@@ -29,25 +32,25 @@ class App extends Component {
 
     return (
       <div>
-        <Header score={this.state.score} topScore={this.state.topScore} />
-          <div className="container">
-            <Title>
-              WWE Clicky Game!
-            </Title>
-            <Wrapper>
-            {
-              wrestlers.map((wrestler) => {
-                return (
-                <div onClick={()=> this.onClick()}>
-                  <WWECard 
-                  image={wrestler.image}
-                />
-                </div>
-                )
-              })
-            }
-            </Wrapper>
-            </div>
+      <Header score={this.state.score} topScore={this.state.topScore} />
+        <Title>
+          WWE Clicky Game!
+        </Title>
+        <div className="container">
+          <Wrapper>
+          {
+            wrestlers.map((wrestler) => {
+              return (
+              <div onClick={()=> this.onClick()}>
+                <WWECard 
+                image={wrestler.image}
+              />
+              </div>
+              )
+            })
+          }
+          </Wrapper>
+        </div>
       </div>
     )
   }

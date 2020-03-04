@@ -1,3 +1,15 @@
-.display-2 {
-    color: white;
+@font-face {
+    font-family: 'Raw2016Font';
+    src: url(../Title/RawhideRaw2016-qM6l.ttf)
+}
+
+.jumbotron {
+    background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+    background-size: cover;
+    background-color: black;
+    color: red;
+    font-family: 'Raw2016Font';
+    font-size: 72px;
 }
